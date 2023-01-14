@@ -7,7 +7,9 @@ print("You: Whaddya mean?")
 print("Spotter: I feel like Kenseth is gonna do something to Logano cuz, y'know, last week")
 print("You: Yeah he looks like he's about to do something big")
 print("Logano to the outside! Will he get by Kenseth...?")
+#Allow users to input their desired choice
 move_1 = input("Throttle through the wreck or brake?(throttle/brake) ")
+#Set up if statement determining the outcome based on choice
 if move_1 == "throttle":
   print("Spotter: Jeff slow down!")  
   print("You manage to catch up to Logano, but not before you smack right into the back of Matt Kenseth's car...")
@@ -53,9 +55,12 @@ if move_4 == "slow":
       print("Spotter: YOU DID IT JEFF! YOU ARE THE MAN!")
       print("The crowd goes wild as you cool down, registering what just happened")
       print("You just got a win at your final race at Martinsville. With the emotional significance this track carries, you know it's going to be one to remember.")
+  #Ask the user if they want to continue the story
       chap1 = input("Do you want to continue the story? (yes/no) ")
 if chap1 == "no":
   print("Oh well, that's too bad") 
+#Set multiple skills as variables
+#These variables will be used in skill checks
 confidence = 80
 focus = 80 
 skill = 90
@@ -74,6 +79,7 @@ if chap1 == "yes":
   print("Alan Gustafson (Crew Chief): Congrats on the win man! Let's go take the championship at Homestead!")
   print("How do you want to reply to this? (Type A or B to choose your answer)")
   talk1 = input("([A] Yeah! Let's bring it home!) or ( [B] Sure, but we need to focus on getting our car right. We have to make sure that everything goes right) ")
+#Update stats based on choice
   if talk1 == "A" :
     print("Your confidence has gone up 5 levels")
     confidence += 5
